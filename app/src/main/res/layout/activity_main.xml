@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD2C4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cookie"
+        android:text="Icecream Clicker"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_icecream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/id_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubbler_one"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_icecream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_icecream"
+        android:layout_width="199dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_upgradeloc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        app:srcCompat="@drawable/icecream"
+        tools:srcCompat="@drawable/icecream" />
+
+    <ImageView
+        android:id="@+id/id_scoop"
+        android:layout_width="122dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="44dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/id_upgradeloc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_icecream"
+        app:layout_constraintVertical_bias="0.203"
+        app:srcCompat="@drawable/cutlery"
+        tools:srcCompat="@drawable/cutlery" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_upgradeloc"
+        android:layout_width="418dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="4dp"
+        android:background="#B8EAF1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_shop"
+        android:layout_width="140dp"
+        android:layout_height="105dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/id_upgradeloc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toEndOf="@+id/id_scoop"
+        app:layout_constraintTop_toBottomOf="@+id/id_icecream"
+        app:layout_constraintVertical_bias="0.229"
+        app:srcCompat="@drawable/icecreamshop"
+        tools:srcCompat="@drawable/icecreamshop" />
+
+    <TextView
+        android:id="@+id/id_scoopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubbler_one"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_upgradeloc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_scoop"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/id_shopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubbler_one"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_upgradeloc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/id_scoopText"
+        app:layout_constraintTop_toBottomOf="@+id/id_shop"
+        app:layout_constraintVertical_bias="0.14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
